@@ -1,0 +1,24 @@
+{
+  "name": "summarize",
+  "version": "1.0.0",
+  "description": "NLP Summarize Service",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "NLP",
+    "Summarize",
+    "Server"
+  ],
+  "author": "SRandhawa",
+  "license": "ISC",
+  "engines": {
+    "node": "14.15.5"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "express": "^4.17.3"
+  }
+}
