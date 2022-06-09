@@ -1,7 +1,7 @@
 # summarize-server
 
 Usage:
+
 POST /summarize
-{
-  "text": <String to be summarized>
-}
+
+    { "text": <String to be summarized> }
