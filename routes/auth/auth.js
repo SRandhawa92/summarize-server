@@ -60,7 +60,7 @@ router.post("/login", async (req, res) => {
         if (error) {
             res.status(400).send(error.details[0].message);
         } else {
-            const token = jwt.sign({ _id: user._id }, process.env.TOKEN_SECRET);
+            const token = jwt.sign({ _id: user._id }, process.env.TOKEN_SECRET, { expiresIn: '2 days' });
             res.header("auth-token", token).send(token)
         }
     } catch (error) {
